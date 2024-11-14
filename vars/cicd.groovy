@@ -10,6 +10,6 @@ def buildArtifact()
 
 def deployTomcat(jobname,IP,contextpath)
 {
-     sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ipadress}:/var/lib/tomcat10/webapps/${contextpath}.war"
+     sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/webapps/${contextpath}.war"
 }
 
